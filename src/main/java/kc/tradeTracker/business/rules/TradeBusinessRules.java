@@ -13,7 +13,7 @@ public class TradeBusinessRules
     {
 		super();
 		this.tradeDao = tradeDao;
-	}
+    }
 
 
 	public void checkIfTradeNameExists(String coinName) 
