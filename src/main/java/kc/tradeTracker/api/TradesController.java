@@ -34,25 +34,25 @@ public class TradesController
     public List<GetAllTradesResponse> getAll()
 	{
         return tradeService.getAll();
-    }
+    	}
 	
 	@PostMapping()
     @ResponseStatus(code = HttpStatus.CREATED)
     public void add(@RequestBody() @Valid CreateTradeReq createTradeReq) 
 	{
         this.tradeService.add(createTradeReq);
-    }
+   	 }
 	
 	@DeleteMapping("{id}")
     public void delete(@PathVariable int id) 
 	{
         this.tradeService.delete(id);
-    }
+   	 }
 	
 	@PutMapping()
     public void update(@RequestBody() UpdateTradeReq updateTradeReq) 
 	{
         this.tradeService.update(updateTradeReq);
-    }
+    	}
 	
 }
